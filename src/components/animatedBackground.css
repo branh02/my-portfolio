@@ -7,7 +7,7 @@
 }
 
 :root {
-  font-family: "open sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .ripple-background {
@@ -16,7 +16,7 @@
   left: 0;
   width: 100vw;
   height: 100%;
-  z-index: -1;  
+  z-index: -1;
   background-color: #050214;
   overflow: hidden;
 }
@@ -73,10 +73,8 @@
 }
 
 /*PHONE*/ 
-
 @media (max-width: 768px) {
     .ripple-background {
       display: none;
     }
 }
-  
