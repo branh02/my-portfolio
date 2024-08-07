@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "open sans", sans-serif;
+}
+
+.ripple-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+  background-color: #050214;
+  overflow: hidden;
+}
+
+.ripple-1,
+.ripple-2,
+.ripple-3,
+.ripple-4,
+.ripple-5 {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #00ffea;
+  border-radius: 50%;
+  transform: translate3d(-50%, 50%, 0);
+  animation-name: ripple;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+.ripple-1 {
+  animation-delay: 0;
+}
+
+.ripple-2 {
+  animation-delay: 1s;
+}
+
+.ripple-3 {
+  animation-delay: 2s;
+}
+
+.ripple-4 {
+  animation-delay: 3s;
+}
+
+.ripple-5 {
+  animation-delay: 4s;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate3d(-50%, 50%, 0) scale(0);
+    opacity: 0.33;
+  }
+  100% {
+    transform: translate3d(-50%, 50%, 0) scale(2000);
+    opacity: 0;
+  }
+}
+
+/*PHONE*/ 
+
+@media (max-width: 768px) {
+    .ripple-background {
+      display: none;
+    }
+}
+  

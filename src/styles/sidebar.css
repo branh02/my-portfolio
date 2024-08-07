@@ -1,0 +1,144 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  padding: 0vh;
+  color: #ccd6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.titleName {
+  text-align: left;
+  padding-top: 15vh;
+  align-items: left;
+  padding-left: 10vh;
+}
+
+.name {
+  font-size: 8vh;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+.title {
+  font-size: 18px;
+  margin-bottom: 2.5vh;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 3vh;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.menu li {
+  margin: 3vh 0;
+}
+
+.menu li a {
+  color: #7c7c7c;
+  text-decoration: none;
+  font-size: 18px;
+  /* display: block; */
+  padding-left: 10vh;
+  /* align-items: center; */
+  text-indent: 10vw;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.menu li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #7487f1;
+}
+
+.sidebar .social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  padding-left: 10vh;
+  padding-bottom: 10vh;
+}
+
+.sidebar .social-links a {
+  margin: 0 1vh;
+  width: 40px; 
+  height: 40px; 
+}
+
+.sidebar .social-links svg {
+  width: 100%;
+  height: 100%;
+}
+
+/*PHONE*/
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr auto; 
+    grid-gap: 20px; 
+  }
+
+  .titleName {
+    padding-top: 10px;
+    padding-left: 0;
+    grid-column: span 2; 
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-left: 20px; */
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    padding-left: 0;
+    text-indent: 0;
+    font-size: 16px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    padding-left: 0; 
+    padding-right: 0; 
+    margin-top: 0; 
+    gap: 10px;
+  }
+
+  .social-links a {
+    margin: 0; 
+  }
+}
