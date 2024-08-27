@@ -35,7 +35,7 @@ const Content = () => {
               <div className="experience-container">
                 <div className="experience-content" style={{ cursor: 'pointer' }} onClick={() => window.open('https://11notify.co.uk/')}>
                   <div className="date-header">
-                    May 2022 ━ PRESENT
+                    May 2022 ━ Feb 2024
                   </div>
                   <div className="job-info">
                     <div className="experience-title-11n">
@@ -62,7 +62,7 @@ const Content = () => {
             <div className="experience-wrapper">
               <div className="experience-container">
                 <div className="experience-content" style={{ cursor: 'pointer' }} onClick={() => window.open('https://auroratools.online/')}>
-                  <div className="date-header">Oct 2022 ━ PRESENT</div>
+                  <div className="date-header">Oct 2022 ━ Feb 2024</div>
                   <div className="job-info">
                     <div className="experience-title-11n">
                       Fullstack Software Developer - Aurora Tools
